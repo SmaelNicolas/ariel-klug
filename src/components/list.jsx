@@ -1,9 +1,16 @@
 import ProductCard from "./ProductCard";
 
-const List = function ({ list }) {
-  return list.map(({ title, description, price, image }) => (
-    <ProductCard key={title} title={title} description={description} price={price} image={image} />
-  ));
+const List = ({ list }) => {
+  return (list.map (({ image, title, description, price, category }) => (
+    <ProductCard
+      key={id}
+      title={title}
+      description={description}
+      price={price}
+      image={image}
+      category={category}
+    />
+  )));
 };
 
 export default List;

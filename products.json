@@ -1,4 +1,5 @@
-[
+{
+  "ropaDeHombre": [
     {
       "id": 1,
       "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -46,7 +47,9 @@
         "rate": 2.1,
         "count": 430
       }
-    },
+    }
+  ],
+  "joyeria": [
     {
       "id": 5,
       "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
@@ -94,7 +97,9 @@
         "rate": 1.9,
         "count": 100
       }
-    },
+    }
+  ],
+  "electronica": [
     {
       "id": 9,
       "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
@@ -166,7 +171,9 @@
         "rate": 2.2,
         "count": 140
       }
-    },
+    }
+  ],
+  "ropaDeMujer": [
     {
       "id": 15,
       "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
@@ -240,3 +247,4 @@
       }
     }
   ]
+}

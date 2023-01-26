@@ -12,17 +12,16 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ image, title, description, price, category }) => {
+const ProductCard = ({ image, title, description, price }) => {
   return (
     <div className="App">
       <Card maxW="sm">
         <CardBody>
           <Image src={image} alt={title} title={title} borderRadius="lg" />
           <Stack mt="6" spacing="3">
-            <Link>
-            <Heading size="md">{title}</Heading>
+            <Link to={`${title}`}>
+              <Heading size="md">{title}</Heading>
             </Link>
-            <Text>Categoría: {category}</Text>
             <Text>{description}</Text>
             <Text color="blue.600" fontSize="2xl">
               ${price}

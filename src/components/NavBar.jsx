@@ -20,6 +20,7 @@ import {
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -33,7 +34,8 @@ const NavBar = () => {
       bg="gray.700"
       width="100%"
     >
-      <Flex align="center" mr={5}>
+       <Link to="/" style={{ textDecoration: "none" }}></Link>
+      <Flex align="center" mr={5}>   
         <Heading as="h1" size="lg">
           <Image
             maxH={55}
@@ -41,8 +43,10 @@ const NavBar = () => {
             alt="Infinity PC"
             title="Infinity PC"
           />
+          
         </Heading>
       </Flex>
+      <Link />
 
       <Box
         display={{ base: "block", md: "none" }}
@@ -101,7 +105,7 @@ const NavBar = () => {
           <Button>Contacto</Button>
         </ButtonGroup>
       </Box>
-
+      
       <Box
         display={{ base: isOpen ? "block" : "none", md: "block" }}
         mt={{ base: 4, md: 0 }}
@@ -129,6 +133,11 @@ const NavBar = () => {
         </Flex>
       </Box>
     </Flex>
+
+
+
+
+
   );
 };
 
